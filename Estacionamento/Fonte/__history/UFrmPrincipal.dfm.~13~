@@ -23,26 +23,23 @@ object frmPrincipal: TfrmPrincipal
       Caption = 'Cadastro'
       object Condutor1: TMenuItem
         Caption = 'Condutor...'
-        OnClick = EvCadastroCondutorClick
+        OnClick = EvAtivarCadastroCondutorClick
       end
       object Condutor2: TMenuItem
         Caption = 'Montadora...'
-        OnClick = EvCadastroMontadora
+        OnClick = EvAtivarCadastroMontadora
       end
       object Modelo1: TMenuItem
         Caption = 'Modelo...'
-        OnClick = EvCadastroModelo
       end
       object N1: TMenuItem
         Caption = '-'
       end
       object Veculo1: TMenuItem
         Caption = 'Ve'#237'culo...'
-        OnClick = EvCadastroVeiculos
       end
       object ipo1: TMenuItem
         Caption = 'Tipo...'
-        OnClick = EvCadastrarTipo
       end
       object N2: TMenuItem
         Caption = '-'
@@ -55,9 +52,8 @@ object frmPrincipal: TfrmPrincipal
     object Processo1: TMenuItem
       Caption = 'Processo'
       object icket1: TMenuItem
-        Caption = 'Ticket...'
+        Caption = 'Ticket..'
         ShortCut = 16468
-        OnClick = EvCadTicket
       end
     end
     object Processo2: TMenuItem

@@ -28,13 +28,13 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
     ButtonHeight = 70
     ButtonWidth = 112
     Caption = 'tlbCadastroCRUD'
-    DisabledImages = ImgDesabilitado
-    HotImages = ImgHot
     Images = ImgAtiva
     ParentShowHint = False
     ShowHint = True
     TabOrder = 0
     Wrapable = False
+    ExplicitTop = 192
+    ExplicitWidth = 684
     object btnNovo: TToolButton
       Left = 0
       Top = 0
@@ -7279,9 +7279,5 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000}
-  end
-  object DataSourceMain: TDataSource
-    Left = 96
-    Top = 16
   end
 end

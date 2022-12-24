@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
-#ifndef UFrmCadastroCondutorH
-#define UFrmCadastroCondutorH
+#ifndef UFrmCadastroMontadoraH
+#define UFrmCadastroMontadoraH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
@@ -10,15 +10,18 @@
 #include "UFrmModeloCadastroCRUD.h"
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.ToolWin.hpp>
+#include <System.ImageList.hpp>
+#include <Vcl.ImgList.hpp>
+#include <Data.DB.hpp>
 //---------------------------------------------------------------------------
-class TFrmCadastroCondutor : public TFrmModeloCadastroCRUD
+class TFrmCadastroMontadora : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
 private:	// User declarations
 public:		// User declarations
-    __fastcall TFrmCadastroCondutor(TComponent* Owner);
+    __fastcall TFrmCadastroMontadora(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TFrmCadastroCondutor *FrmCadastroCondutor;
+extern PACKAGE TFrmCadastroMontadora *FrmCadastroMontadora;
 //---------------------------------------------------------------------------
 #endif

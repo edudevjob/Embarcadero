@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
-#ifndef UFrmCadastroCondutorH
-#define UFrmCadastroCondutorH
+#ifndef UFrmCadastroModeloH
+#define UFrmCadastroModeloH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
@@ -11,14 +11,15 @@
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.ToolWin.hpp>
 //---------------------------------------------------------------------------
-class TFrmCadastroCondutor : public TFrmModeloCadastroCRUD
+class TFrmCadastroModelo : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
+    void __fastcall EvSairFormulario(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-    __fastcall TFrmCadastroCondutor(TComponent* Owner);
+    __fastcall TFrmCadastroModelo(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TFrmCadastroCondutor *FrmCadastroCondutor;
+extern PACKAGE TFrmCadastroModelo *FrmCadastroModelo;
 //---------------------------------------------------------------------------
 #endif

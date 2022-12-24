@@ -55,9 +55,8 @@ object frmPrincipal: TfrmPrincipal
     object Processo1: TMenuItem
       Caption = 'Processo'
       object icket1: TMenuItem
-        Caption = 'Ticket...'
+        Caption = 'Ticket..'
         ShortCut = 16468
-        OnClick = EvCadTicket
       end
     end
     object Processo2: TMenuItem

@@ -8,8 +8,6 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include "UFrmModeloCadastroCRUD.h"
-#include <Vcl.ComCtrls.hpp>
-#include <Vcl.ToolWin.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroCondutor : public TFrmModeloCadastroCRUD
 {

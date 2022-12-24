@@ -4,8 +4,8 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'FrmModeloCadastroCRUD'
-  ClientHeight = 306
-  ClientWidth = 757
+  ClientHeight = 257
+  ClientWidth = 546
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -21,15 +21,13 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
   TextHeight = 19
   object tlbCadastroCRUD: TToolBar
     Left = 0
-    Top = 241
-    Width = 757
+    Top = 192
+    Width = 546
     Height = 65
     Align = alBottom
     ButtonHeight = 70
-    ButtonWidth = 112
+    ButtonWidth = 74
     Caption = 'tlbCadastroCRUD'
-    DisabledImages = ImgDesabilitado
-    HotImages = ImgHot
     Images = ImgAtiva
     ParentShowHint = False
     ShowHint = True
@@ -42,7 +40,7 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       ImageIndex = 0
     end
     object ToolButton5: TToolButton
-      Left = 112
+      Left = 74
       Top = 0
       Width = 15
       Caption = 'ToolButton5'
@@ -50,13 +48,13 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       Style = tbsSeparator
     end
     object btnPesquisar: TToolButton
-      Left = 127
+      Left = 89
       Top = 0
       Caption = 'Pesquisar'
       ImageIndex = 1
     end
     object ToolButton4: TToolButton
-      Left = 239
+      Left = 163
       Top = 0
       Width = 15
       Caption = 'ToolButton4'
@@ -64,27 +62,27 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       Style = tbsSeparator
     end
     object btnUpdate: TToolButton
-      Left = 254
+      Left = 178
       Top = 0
       Caption = 'Atualizar'
       ImageIndex = 2
     end
-    object btnExcluir: TToolButton
-      Left = 366
-      Top = 0
-      Caption = 'Excluir'
-      ImageIndex = 3
-    end
     object ToolButton1: TToolButton
-      Left = 478
+      Left = 252
       Top = 0
       Width = 15
       Caption = 'ToolButton1'
       ImageIndex = 3
       Style = tbsSeparator
     end
+    object btnExcluir: TToolButton
+      Left = 267
+      Top = 0
+      Caption = 'Excluir'
+      ImageIndex = 3
+    end
     object ToolButton2: TToolButton
-      Left = 493
+      Left = 341
       Top = 0
       Width = 15
       Caption = 'ToolButton2'
@@ -92,13 +90,13 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       Style = tbsSeparator
     end
     object bntCancelar: TToolButton
-      Left = 508
+      Left = 356
       Top = 0
       Caption = 'Cancelar'
       ImageIndex = 4
     end
     object ToolButton3: TToolButton
-      Left = 620
+      Left = 430
       Top = 0
       Width = 15
       Caption = 'ToolButton3'
@@ -106,7 +104,7 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       Style = tbsSeparator
     end
     object btnSair: TToolButton
-      Left = 635
+      Left = 445
       Top = 0
       Caption = 'Sair'
       ImageIndex = 5
@@ -7279,9 +7277,5 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000}
-  end
-  object DataSourceMain: TDataSource
-    Left = 96
-    Top = 16
   end
 end

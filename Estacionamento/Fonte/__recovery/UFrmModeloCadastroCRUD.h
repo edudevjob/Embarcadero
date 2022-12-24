@@ -12,6 +12,8 @@
 #include <System.ImageList.hpp>
 #include <Vcl.ImgList.hpp>
 #include <Data.DB.hpp>
+#include <System.Actions.hpp>
+#include <Vcl.ActnList.hpp>
 //---------------------------------------------------------------------------
 class TFrmModeloCadastroCRUD : public TForm
 {
@@ -32,6 +34,7 @@ __published:	// IDE-managed Components
     TImageList *ImgDesabilitado;
     TImageList *ImgHot;
     TDataSource *DataSourceMain;
+    TActionList *ActionListCRUD;
     void __fastcall EvFecharFormularioClose(TObject *Sender, TCloseAction &Action);
     void __fastcall EvSair(TObject *Sender);
 

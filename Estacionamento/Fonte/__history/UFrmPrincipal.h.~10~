@@ -28,12 +28,8 @@ __published:	// IDE-managed Components
     TMenuItem *Veculo2;
     TMenuItem *Permanncia1;
     void __fastcall EvEncerrarSistema(TObject *Sender);
-    void __fastcall EvCadastroCondutorClick(TObject *Sender);
-    void __fastcall EvCadastroMontadora(TObject *Sender);
-    void __fastcall EvCadastroModelo(TObject *Sender);
-    void __fastcall EvCadastroVeiculos(TObject *Sender);
-    void __fastcall EvCadastrarTipo(TObject *Sender);
-    void __fastcall EvCadTicket(TObject *Sender);
+    void __fastcall EvAtivarCadastroCondutorClick(TObject *Sender);
+    void __fastcall EvAtivarCadastroMontadora(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
     __fastcall TfrmPrincipal(TComponent* Owner);

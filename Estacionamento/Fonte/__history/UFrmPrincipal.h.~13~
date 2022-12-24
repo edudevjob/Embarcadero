@@ -33,7 +33,6 @@ __published:	// IDE-managed Components
     void __fastcall EvCadastroModelo(TObject *Sender);
     void __fastcall EvCadastroVeiculos(TObject *Sender);
     void __fastcall EvCadastrarTipo(TObject *Sender);
-    void __fastcall EvCadTicket(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
     __fastcall TfrmPrincipal(TComponent* Owner);

@@ -3,26 +3,19 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "UFrmModeloCadastroCRUD.h"
-
+#include "UFrmCadastroModelo.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
+#pragma link "UFrmModeloCadastroCRUD"
 #pragma resource "*.dfm"
-TFrmModeloCadastroCRUD *FrmModeloCadastroCRUD;
+TFrmCadastroModelo *FrmCadastroModelo;
 //---------------------------------------------------------------------------
-__fastcall TFrmModeloCadastroCRUD::TFrmModeloCadastroCRUD(TComponent* Owner)
-    : TForm(Owner)
+__fastcall TFrmCadastroModelo::TFrmCadastroModelo(TComponent* Owner)
+    : TFrmModeloCadastroCRUD(Owner)
 {
 }
 //---------------------------------------------------------------------------
-void __fastcall TFrmModeloCadastroCRUD::EvFecharFormularioClose(TObject *Sender,
- TCloseAction &Action)
-
-{{
-   Action = caFree;
-}}
- //---------------------------------------------------------------------------
-void __fastcall TFrmModeloCadastroCRUD::EvSair(TObject *Sender)
+void __fastcall TFrmCadastroModelo::EvSairFormulario(TObject *Sender)
 {
    Close();
 }

@@ -55,9 +55,3 @@ void __fastcall TfrmPrincipal::EvCadastrarTipo(TObject *Sender)
 {
  new TFrmCadastroTipo(this);
 }
-void __fastcall TfrmPrincipal::EvCadTicket(TObject *Sender)
-{
- new TFrmCadTicket(this);
-}
-//---------------------------------------------------------------------------
-

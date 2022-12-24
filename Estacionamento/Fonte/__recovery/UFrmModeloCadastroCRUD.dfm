@@ -7284,4 +7284,8 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
     Left = 96
     Top = 16
   end
+  object ActionListCRUD: TActionList
+    Left = 184
+    Top = 16
+  end
 end

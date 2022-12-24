@@ -1,24 +1,26 @@
 //---------------------------------------------------------------------------
 
-#ifndef UFrmCadastroCondutorH
-#define UFrmCadastroCondutorH
+#ifndef UFrmCadTicketH
+#define UFrmCadTicketH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include "UFrmModeloCadastroCRUD.h"
+#include <System.ImageList.hpp>
 #include <Vcl.ComCtrls.hpp>
+#include <Vcl.ImgList.hpp>
 #include <Vcl.ToolWin.hpp>
 //---------------------------------------------------------------------------
-class TFrmCadastroCondutor : public TFrmModeloCadastroCRUD
+class TFrmCadTicket : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
 private:	// User declarations
 public:		// User declarations
-    __fastcall TFrmCadastroCondutor(TComponent* Owner);
+    __fastcall TFrmCadTicket(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TFrmCadastroCondutor *FrmCadastroCondutor;
+extern PACKAGE TFrmCadTicket *FrmCadTicket;
 //---------------------------------------------------------------------------
 #endif

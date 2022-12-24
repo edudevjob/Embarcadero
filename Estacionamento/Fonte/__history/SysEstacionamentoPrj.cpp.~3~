@@ -4,13 +4,13 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("UFrmCadastroMontadora.cpp", FrmCadastroMontadora);
-USEFORM("UFrmCadastroVeiculos.cpp", FrmCadastroVeiculo);
-USEFORM("UFrmModeloCadastroCRUD.cpp", FrmModeloCadastroCRUD);
 USEFORM("UFrmPrincipal.cpp", frmPrincipal);
-USEFORM("UFrmCadastroModelo.cpp", FrmCadastroModelo);
-USEFORM("UFrmCadastrarTipo.cpp", FrmCadastroTipo);
+USEFORM("UFrmModeloCadastroCRUD.cpp", FrmModeloCadastroCRUD);
 USEFORM("UFrmCadastroCondutor.cpp", FrmCadastroCondutor);
+USEFORM("UFrmCadastroMontadora.cpp", FrmCadastroMontadora);
+USEFORM("UFrmCadastroModelo.cpp", FrmCadastroModelo);
+USEFORM("UFrmCadastroVeiculos.cpp", FrmCadastroVeiculo);
+USEFORM("UFrmCadastrarTipo.cpp", FrmCadastroTipo);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
