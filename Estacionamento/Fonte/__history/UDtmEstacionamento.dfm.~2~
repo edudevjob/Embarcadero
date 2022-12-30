@@ -1,0 +1,21 @@
+object dtmEstacionamento: TdtmEstacionamento
+  OldCreateOrder = False
+  Height = 651
+  Width = 1070
+  object cnxEstacionamento: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=EstacionamentoDB')
+    LoginPrompt = False
+    Left = 47
+    Top = 19
+  end
+  object qryMontadora: TFDQuery
+    Connection = cnxEstacionamento
+    SQL.Strings = (
+      'SELECT MON_COD,'
+      '       MON_NOM'
+      '       FROM MONTADORA')
+    Left = 144
+    Top = 16
+  end
+end

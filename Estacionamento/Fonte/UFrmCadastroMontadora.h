@@ -13,10 +13,19 @@
 #include <System.ImageList.hpp>
 #include <Vcl.ImgList.hpp>
 #include <Data.DB.hpp>
+#include <System.Actions.hpp>
+#include <Vcl.ActnList.hpp>
+#include <Vcl.DBActns.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.Mask.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroMontadora : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
+    TLabel *Label1;
+    TDBEdit *dbECodigo;
+    TLabel *Label2;
+    TDBEdit *dbEditNome;
 private:	// User declarations
 public:		// User declarations
     __fastcall TFrmCadastroMontadora(TComponent* Owner);
