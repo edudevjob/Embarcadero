@@ -1,5 +1,0 @@
-object dtmEstacionamento: TdtmEstacionamento
-  OldCreateOrder = False
-  Height = 651
-  Width = 1070
-end

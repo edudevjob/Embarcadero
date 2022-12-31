@@ -38,11 +38,6 @@ __published:	// IDE-managed Components
     TFDQuery *qryTipo;
     TIntegerField *qryTipoTIP_COD;
     TStringField *qryTipoTIP_DES;
-    TFDQuery *qryCondutor;
-    TIntegerField *qryCondutorCON_COD;
-    TStringField *qryCondutorCON_NOM;
-    TStringField *qryCondutorCON_CNH;
-    TStringField *qryCondutorCON_CPF;
 private:	// User declarations
 public:		// User declarations
     __fastcall TdtmEstacionamento(TComponent* Owner);

@@ -73,7 +73,6 @@ object dtmEstacionamento: TdtmEstacionamento
     end
   end
   object qryCondutor: TFDQuery
-    Active = True
     Connection = cnxEstacionamento
     SQL.Strings = (
       'SELECT CON_COD,'
@@ -109,8 +108,7 @@ object dtmEstacionamento: TdtmEstacionamento
       Size = 15
     end
     object qryCondutorCON_CPF: TStringField
-      DisplayLabel = 'CPF'
-      FieldName = 'CON_CPF'
+      FieldName = 'CPF'
       Origin = 'CON_CPF'
       Required = True
       EditMask = '000.000.000-00;1;_'

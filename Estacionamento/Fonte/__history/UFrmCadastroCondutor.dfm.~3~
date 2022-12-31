@@ -1,7 +1,7 @@
 inherited FrmCadastroCondutor: TFrmCadastroCondutor
   Caption = 'Cadastro de Condutor'
-  ClientHeight = 243
-  ExplicitHeight = 272
+  ClientHeight = 282
+  ExplicitHeight = 311
   PixelsPerInch = 96
   TextHeight = 19
   object Label1: TLabel [0]
@@ -10,7 +10,7 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
     Width = 50
     Height = 18
     Caption = 'C'#243'digo'
-    FocusControl = dbEditCod
+    FocusControl = DBEdit1
   end
   object Label2: TLabel [1]
     Left = 22
@@ -18,7 +18,7 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
     Width = 42
     Height = 19
     Caption = 'Nome'
-    FocusControl = dbEditNome
+    FocusControl = DBEdit2
   end
   object Label3: TLabel [2]
     Left = 32
@@ -26,58 +26,52 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
     Width = 32
     Height = 19
     Caption = 'CNH'
-    FocusControl = dbEditCNH
+    FocusControl = DBEdit3
   end
   object Label4: TLabel [3]
-    Left = 239
-    Top = 126
+    Left = 37
+    Top = 174
     Width = 27
     Height = 19
     Caption = 'CPF'
   end
   inherited tlbCadastroCRUD: TToolBar
-    Top = 178
+    Top = 217
   end
-  object dbEditCod: TDBEdit [5]
+  object DBEdit1: TDBEdit [5]
     Left = 70
     Top = 22
     Width = 213
-    Height = 27
-    CharCase = ecUpperCase
+    Height = 26
     DataField = 'CON_COD'
     DataSource = DataSourceMain
     TabOrder = 1
   end
-  object dbEditNome: TDBEdit [6]
+  object DBEdit2: TDBEdit [6]
     Left = 70
     Top = 71
-    Width = 503
+    Width = 507
     Height = 27
-    CharCase = ecUpperCase
     DataField = 'CON_NOM'
     DataSource = DataSourceMain
     TabOrder = 2
   end
-  object dbEditCNH: TDBEdit [7]
+  object DBEdit3: TDBEdit [7]
     Left = 70
-    Top = 123
-    Width = 131
+    Top = 121
+    Width = 213
     Height = 27
-    CharCase = ecUpperCase
     DataField = 'CON_CNH'
     DataSource = DataSourceMain
-    MaxLength = 11
     TabOrder = 3
   end
-  object dbEditCPF: TDBEdit [8]
-    Left = 272
-    Top = 123
-    Width = 131
+  object DBEdit4: TDBEdit [8]
+    Left = 70
+    Top = 170
+    Width = 213
     Height = 27
-    CharCase = ecUpperCase
     DataField = 'CON_CPF'
     DataSource = DataSourceMain
-    MaxLength = 14
     TabOrder = 4
   end
   inherited ImgAtiva: TImageList

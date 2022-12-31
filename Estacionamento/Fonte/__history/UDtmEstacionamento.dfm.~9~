@@ -12,7 +12,6 @@ object dtmEstacionamento: TdtmEstacionamento
     Top = 19
   end
   object qryMontadora: TFDQuery
-    Active = True
     Connection = cnxEstacionamento
     SQL.Strings = (
       'SELECT MON_COD, MON_NOM FROM MONTADORA')
@@ -47,7 +46,6 @@ object dtmEstacionamento: TdtmEstacionamento
     Top = 16
   end
   object qryTipo: TFDQuery
-    Active = True
     Connection = cnxEstacionamento
     SQL.Strings = (
       'SELECT TIP_COD,'
@@ -70,52 +68,6 @@ object dtmEstacionamento: TdtmEstacionamento
       FieldName = 'TIP_DES'
       Origin = 'TIP_DES'
       Required = True
-    end
-  end
-  object qryCondutor: TFDQuery
-    Active = True
-    Connection = cnxEstacionamento
-    SQL.Strings = (
-      'SELECT CON_COD,'
-      '       CON_NOM,'
-      '       CON_CNH,'
-      '       CON_CPF'
-      'FROM CONDUTOR')
-    Left = 168
-    Top = 152
-    object qryCondutorCON_COD: TIntegerField
-      DisplayLabel = 'C'#243'digo'
-      DisplayWidth = 5
-      FieldName = 'CON_COD'
-      Origin = 'CON_COD'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-      Required = True
-      MaxValue = 2000
-      MinValue = 1
-    end
-    object qryCondutorCON_NOM: TStringField
-      DisplayLabel = 'Nome'
-      FieldName = 'CON_NOM'
-      Origin = 'CON_NOM'
-      Required = True
-      Size = 60
-    end
-    object qryCondutorCON_CNH: TStringField
-      DisplayLabel = 'CNH'
-      DisplayWidth = 11
-      FieldName = 'CON_CNH'
-      Origin = 'CON_CNH'
-      EditMask = '00000000000;0;_'
-      Size = 15
-    end
-    object qryCondutorCON_CPF: TStringField
-      DisplayLabel = 'CPF'
-      FieldName = 'CON_CPF'
-      Origin = 'CON_CPF'
-      Required = True
-      EditMask = '000.000.000-00;1;_'
-      FixedChar = True
-      Size = 14
     end
   end
 end

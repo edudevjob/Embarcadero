@@ -73,7 +73,6 @@ object dtmEstacionamento: TdtmEstacionamento
     end
   end
   object qryCondutor: TFDQuery
-    Active = True
     Connection = cnxEstacionamento
     SQL.Strings = (
       'SELECT CON_COD,'
