@@ -1,4 +1,6 @@
 //---------------------------------------------------------------------------
+
+
 #pragma hdrstop
 
 #include "UDtmEstacionamento.h"
@@ -7,7 +9,6 @@
 #pragma classgroup "Vcl.Controls.TControl"
 #pragma resource "*.dfm"
 TdtmEstacionamento *dtmEstacionamento;
-
 //---------------------------------------------------------------------------
 __fastcall TdtmEstacionamento::TdtmEstacionamento(TComponent* Owner)
     : TDataModule(Owner)
@@ -15,14 +16,7 @@ __fastcall TdtmEstacionamento::TdtmEstacionamento(TComponent* Owner)
 
 }
 //---------------------------------------------------------------------------
-void __fastcall TdtmEstacionamento::ConfigureLookUp(TFDQuery* AQuery)
-{
-  if(AQuery->Active)
-  {
-   AQuery->Close();
-  }
-  AQuery->Connection = cnxEstacionamento;
-  AQuery->Open();
-}
+void __fastcall TdtmEstacionamento::ConfigureLookUp(TFDQuery* AQuery){
 
+}
 //---------------------------------------------------------------------------

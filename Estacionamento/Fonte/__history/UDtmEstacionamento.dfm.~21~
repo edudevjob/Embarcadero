@@ -1,7 +1,7 @@
 object dtmEstacionamento: TdtmEstacionamento
   OldCreateOrder = False
   Height = 356
-  Width = 739
+  Width = 1070
   object cnxEstacionamento: TFDConnection
     Params.Strings = (
       'Server=localhost'

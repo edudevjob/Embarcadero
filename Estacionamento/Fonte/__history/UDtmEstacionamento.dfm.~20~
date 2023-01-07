@@ -1,6 +1,6 @@
 object dtmEstacionamento: TdtmEstacionamento
   OldCreateOrder = False
-  Height = 651
+  Height = 356
   Width = 1070
   object cnxEstacionamento: TFDConnection
     Params.Strings = (
@@ -73,6 +73,7 @@ object dtmEstacionamento: TdtmEstacionamento
     end
   end
   object qryCondutor: TFDQuery
+    Active = True
     Connection = cnxEstacionamento
     SQL.Strings = (
       'SELECT CON_COD,'
@@ -108,11 +109,106 @@ object dtmEstacionamento: TdtmEstacionamento
       Size = 15
     end
     object qryCondutorCON_CPF: TStringField
-      FieldName = 'CPF'
+      DisplayLabel = 'CPF'
+      FieldName = 'CON_CPF'
       Origin = 'CON_CPF'
       Required = True
+      EditMask = '000.000.000-00;1;_'
       FixedChar = True
       Size = 14
+    end
+  end
+  object qryModelo: TFDQuery
+    Active = True
+    Connection = cnxEstacionamento
+    SQL.Strings = (
+      'SELECT '
+      '     MOD_COD,'
+      '     MON_COD,'
+      '     MOD_NOM '
+      'FROM MODELO ')
+    Left = 168
+    Top = 216
+    object qryModeloMOD_COD: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      DisplayWidth = 5
+      FieldName = 'MOD_COD'
+      Origin = 'MOD_COD'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object qryModeloMON_COD: TIntegerField
+      DisplayLabel = 'Montadora'
+      DisplayWidth = 5
+      FieldName = 'MON_COD'
+      Origin = 'MON_COD'
+      Required = True
+    end
+    object qryModeloMOD_NOM: TStringField
+      DisplayLabel = 'Nome'
+      FieldName = 'MOD_NOM'
+      Origin = 'MOD_NOM'
+      Required = True
+      Size = 60
+    end
+  end
+  object qryVeiculo: TFDQuery
+    Connection = cnxEstacionamento
+    SQL.Strings = (
+      'SELECT VEI_COD,'
+      '       MON_COD,'
+      '       MOD_COD,'
+      '       TIP_COD,'
+      '       VEI_PLA,'
+      '       VEI_ANO_FAB'
+      '    FROM VEICULO; ')
+    Left = 168
+    Top = 272
+    object qryVeiculoVEI_COD: TIntegerField
+      DisplayLabel = '&C'#243'digo'
+      DisplayWidth = 5
+      FieldName = 'VEI_COD'
+      Origin = 'VEI_COD'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object qryVeiculoMON_COD: TIntegerField
+      DisplayLabel = '&Montadora'
+      DisplayWidth = 5
+      FieldName = 'MON_COD'
+      Origin = 'MON_COD'
+      Required = True
+    end
+    object qryVeiculoMOD_COD: TIntegerField
+      DisplayLabel = '&Modelo'
+      DisplayWidth = 5
+      FieldName = 'MOD_COD'
+      Origin = 'MOD_COD'
+      Required = True
+    end
+    object qryVeiculoTIP_COD: TIntegerField
+      DisplayLabel = '&Tipo'
+      DisplayWidth = 5
+      FieldName = 'TIP_COD'
+      Origin = 'TIP_COD'
+      Required = True
+    end
+    object qryVeiculoVEI_PLA: TStringField
+      DisplayLabel = '&Placa'
+      DisplayWidth = 5
+      FieldName = 'VEI_PLA'
+      Origin = 'VEI_PLA'
+      Size = 12
+    end
+    object qryVeiculoVEI_ANO_FAB: TIntegerField
+      DisplayLabel = '&Ano de Fbrica'#231#227'o'
+      DisplayWidth = 5
+      FieldName = 'VEI_ANO_FAB'
+      Origin = 'VEI_ANO_FAB'
     end
   end
 end

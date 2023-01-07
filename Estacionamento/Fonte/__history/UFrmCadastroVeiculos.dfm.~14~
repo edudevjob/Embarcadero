@@ -45,11 +45,11 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     FocusControl = DBEditPlaca
   end
   object Label6: TLabel [5]
-    Left = 231
+    Left = 244
     Top = 159
-    Width = 74
+    Width = 122
     Height = 19
-    Caption = '&Fabrica'#231#227'o'
+    Caption = '&Ano de Fbrica'#231#227'o'
     FocusControl = DBEditFabricacao
   end
   inherited tlbCadastroCRUD: TToolBar
@@ -104,9 +104,9 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     TabOrder = 5
   end
   object DBEditFabricacao: TDBEdit [12]
-    Left = 311
+    Left = 372
     Top = 156
-    Width = 139
+    Width = 126
     Height = 27
     DataField = 'VEI_ANO_FAB'
     DataSource = DataSourceMain
@@ -115,7 +115,7 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
   object DBLkCbxMontadora: TDBLookupComboBox [13]
     Left = 231
     Top = 57
-    Width = 219
+    Width = 267
     Height = 27
     DataField = 'MON_COD'
     DataSource = DataSourceMain
@@ -125,9 +125,9 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     TabOrder = 2
   end
   object dblkModelo: TDBLookupComboBox [14]
-    Left = 231
+    Left = 239
     Top = 90
-    Width = 219
+    Width = 259
     Height = 27
     DataField = 'MOD_COD'
     DataSource = DataSourceMain
@@ -137,9 +137,9 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     TabOrder = 8
   end
   object dblkTipo: TDBLookupComboBox [15]
-    Left = 231
+    Left = 239
     Top = 123
-    Width = 219
+    Width = 259
     Height = 27
     DataField = 'TIP_COD'
     DataSource = DataSourceMain

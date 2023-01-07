@@ -5,133 +5,144 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
   PixelsPerInch = 96
   TextHeight = 19
   object Label1: TLabel [0]
-    Left = 40
-    Top = 40
-    Width = 50
+    Left = 8
+    Top = 27
+    Width = 51
     Height = 19
     Caption = '&C'#243'digo'
-    FocusControl = DBEdit1
+    FocusControl = DBEditCodigo
   end
   object Label2: TLabel [1]
-    Left = 231
-    Top = 40
+    Left = 158
+    Top = 27
     Width = 75
     Height = 19
-    Caption = '&Montadora'
-    FocusControl = DBEdit2
+    Caption = 'M&ontadora'
+    FocusControl = DBEditMontadora
   end
   object Label3: TLabel [2]
-    Left = 39
-    Top = 80
+    Left = 7
+    Top = 88
     Width = 51
     Height = 19
     Caption = '&Modelo'
-    FocusControl = DBEdit3
+    FocusControl = DBEditModelo
   end
   object Label4: TLabel [3]
-    Left = 312
-    Top = 80
+    Left = 280
+    Top = 88
     Width = 32
     Height = 19
     Caption = '&Tipo'
-    FocusControl = DBEdit4
+    FocusControl = DBEditTipo
   end
   object Label5: TLabel [4]
-    Left = 54
-    Top = 119
+    Left = 25
+    Top = 135
     Width = 36
-    Height = 19
+    Height = 36
     Caption = '&Placa'
-    FocusControl = DBEdit5
+    FocusControl = DBEditPlaca
   end
   object Label6: TLabel [5]
-    Left = 254
-    Top = 119
+    Left = 216
+    Top = 135
     Width = 122
     Height = 19
     Caption = '&Ano de Fbrica'#231#227'o'
-    FocusControl = DBEdit6
+    FocusControl = DBEditFabricacao
   end
   inherited tlbCadastroCRUD: TToolBar
     Top = 179
-    inherited ToolButton1: TToolButton [5]
-      Left = 366
-      ExplicitLeft = 366
-    end
-    inherited btnExcluir: TToolButton [6]
-      Left = 381
-      ExplicitLeft = 381
-    end
+    ExplicitTop = 179
   end
-  object DBEdit1: TDBEdit [7]
-    Left = 96
-    Top = 37
-    Width = 129
+  object DBEditCodigo: TDBEdit [7]
+    Left = 64
+    Top = 24
+    Width = 89
     Height = 27
     DataField = 'VEI_COD'
     DataSource = DataSourceMain
     TabOrder = 1
   end
-  object DBEdit2: TDBEdit [8]
-    Left = 312
-    Top = 37
-    Width = 257
+  object DBEditMontadora: TDBEdit [8]
+    Left = 239
+    Top = 24
+    Width = 171
     Height = 27
     DataField = 'MON_COD'
     DataSource = DataSourceMain
     TabOrder = 2
   end
-  object DBEdit3: TDBEdit [9]
-    Left = 96
-    Top = 70
+  object DBEditModelo: TDBEdit [9]
+    Left = 64
+    Top = 78
     Width = 210
     Height = 27
     DataField = 'MOD_COD'
     DataSource = DataSourceMain
     TabOrder = 3
   end
-  object DBEdit4: TDBEdit [10]
-    Left = 350
-    Top = 70
+  object DBEditTipo: TDBEdit [10]
+    Left = 318
+    Top = 78
     Width = 219
     Height = 27
     DataField = 'TIP_COD'
     DataSource = DataSourceMain
     TabOrder = 4
   end
-  object DBEdit5: TDBEdit [11]
-    Left = 96
-    Top = 116
+  object DBEditPlaca: TDBEdit [11]
+    Left = 64
+    Top = 132
     Width = 143
     Height = 27
+    CharCase = ecUpperCase
     DataField = 'VEI_PLA'
     DataSource = DataSourceMain
     TabOrder = 5
   end
-  object DBEdit6: TDBEdit [12]
-    Left = 382
-    Top = 116
+  object DBEditFabricacao: TDBEdit [12]
+    Left = 344
+    Top = 132
     Width = 126
     Height = 27
     DataField = 'VEI_ANO_FAB'
     DataSource = DataSourceMain
     TabOrder = 6
   end
+  object DBLkCbxMontadora: TDBLookupComboBox [13]
+    Left = 416
+    Top = 24
+    Width = 185
+    Height = 27
+    DataField = 'MON_COD'
+    DataSource = DataSourceMain
+    TabOrder = 7
+  end
   inherited ImgAtiva: TImageList
-    Left = 720
+    Left = 696
     Top = 64
   end
   inherited ImgHot: TImageList
-    Left = 672
+    Left = 632
     Top = 64
   end
   inherited DataSourceMain: TDataSource
     DataSet = dtmEstacionamento.qryVeiculo
-    Left = 632
+    Left = 616
     Top = 8
   end
   inherited ActionListCRUD: TActionList
-    Left = 720
+    Left = 696
     Top = 8
+  end
+  object qryMontadoraLK: TFDQuery
+    Left = 704
+    Top = 120
+  end
+  object DTSMontadoraLK: TDataSource
+    Left = 632
+    Top = 120
   end
 end

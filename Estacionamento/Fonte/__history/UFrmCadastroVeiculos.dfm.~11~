@@ -1,11 +1,11 @@
 inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
   Caption = 'Cadastro de Veiculos'
-  ClientHeight = 277
-  ExplicitHeight = 306
+  ClientHeight = 244
+  ExplicitHeight = 273
   PixelsPerInch = 96
   TextHeight = 19
   object Label1: TLabel [0]
-    Left = 39
+    Left = 8
     Top = 27
     Width = 51
     Height = 19
@@ -13,90 +13,90 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     FocusControl = DBEditCodigo
   end
   object Label2: TLabel [1]
-    Left = 14
-    Top = 60
+    Left = 158
+    Top = 27
     Width = 75
     Height = 19
     Caption = 'M&ontadora'
     FocusControl = DBEditMontadora
   end
   object Label3: TLabel [2]
-    Left = 38
-    Top = 93
+    Left = 8
+    Top = 81
     Width = 51
     Height = 19
     Caption = '&Modelo'
     FocusControl = DBEditModelo
   end
   object Label4: TLabel [3]
-    Left = 56
-    Top = 126
+    Left = 344
+    Top = 81
     Width = 32
     Height = 19
     Caption = '&Tipo'
     FocusControl = DBEditTipo
   end
   object Label5: TLabel [4]
-    Left = 52
-    Top = 159
+    Left = 25
+    Top = 135
     Width = 36
     Height = 36
     Caption = '&Placa'
     FocusControl = DBEditPlaca
   end
   object Label6: TLabel [5]
-    Left = 231
-    Top = 159
-    Width = 74
+    Left = 216
+    Top = 135
+    Width = 122
     Height = 19
-    Caption = '&Fabrica'#231#227'o'
+    Caption = '&Ano de Fbrica'#231#227'o'
     FocusControl = DBEditFabricacao
   end
   inherited tlbCadastroCRUD: TToolBar
-    Top = 212
+    Top = 179
     TabOrder = 7
     ExplicitTop = 179
   end
   object DBEditCodigo: TDBEdit [7]
-    Left = 95
+    Left = 64
     Top = 24
-    Width = 130
+    Width = 89
     Height = 27
     DataField = 'VEI_COD'
     DataSource = DataSourceMain
     TabOrder = 0
   end
   object DBEditMontadora: TDBEdit [8]
-    Left = 95
-    Top = 57
-    Width = 130
+    Left = 239
+    Top = 24
+    Width = 171
     Height = 27
     DataField = 'MON_COD'
     DataSource = DataSourceMain
     TabOrder = 1
   end
   object DBEditModelo: TDBEdit [9]
-    Left = 94
-    Top = 90
-    Width = 131
+    Left = 64
+    Top = 78
+    Width = 121
     Height = 27
     DataField = 'MOD_COD'
     DataSource = DataSourceMain
     TabOrder = 3
   end
   object DBEditTipo: TDBEdit [10]
-    Left = 94
-    Top = 156
-    Width = 131
+    Left = 382
+    Top = 78
+    Width = 219
     Height = 27
     DataField = 'TIP_COD'
     DataSource = DataSourceMain
     TabOrder = 4
   end
   object DBEditPlaca: TDBEdit [11]
-    Left = 94
-    Top = 123
-    Width = 131
+    Left = 64
+    Top = 132
+    Width = 143
     Height = 27
     CharCase = ecUpperCase
     DataField = 'VEI_PLA'
@@ -104,18 +104,18 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     TabOrder = 5
   end
   object DBEditFabricacao: TDBEdit [12]
-    Left = 311
-    Top = 156
-    Width = 139
+    Left = 344
+    Top = 132
+    Width = 126
     Height = 27
     DataField = 'VEI_ANO_FAB'
     DataSource = DataSourceMain
     TabOrder = 6
   end
   object DBLkCbxMontadora: TDBLookupComboBox [13]
-    Left = 231
-    Top = 57
-    Width = 219
+    Left = 416
+    Top = 24
+    Width = 185
     Height = 27
     DataField = 'MON_COD'
     DataSource = DataSourceMain
@@ -125,9 +125,9 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     TabOrder = 2
   end
   object dblkModelo: TDBLookupComboBox [14]
-    Left = 231
-    Top = 90
-    Width = 219
+    Left = 191
+    Top = 78
+    Width = 145
     Height = 27
     DataField = 'MOD_COD'
     DataSource = DataSourceMain
@@ -135,18 +135,6 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     ListField = 'MOD_NOM'
     ListSource = dtsModeloLK
     TabOrder = 8
-  end
-  object dblkTipo: TDBLookupComboBox [15]
-    Left = 231
-    Top = 123
-    Width = 219
-    Height = 27
-    DataField = 'TIP_COD'
-    DataSource = DataSourceMain
-    KeyField = 'TIP_COD'
-    ListField = 'TIP_DES'
-    ListSource = dtsTipoLK
-    TabOrder = 9
   end
   inherited ImgAtiva: TImageList
     Left = 704
@@ -179,13 +167,13 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
   end
   object dtsMontadoraLK: TDataSource
     DataSet = qryMontadoraLK
-    Left = 552
-    Top = 64
+    Left = 560
+    Top = 120
   end
   object dtsModeloLK: TDataSource
     DataSet = qryModeloLK
-    Left = 552
-    Top = 8
+    Left = 488
+    Top = 120
   end
   object qryModeloLK: TFDQuery
     Active = True
@@ -197,21 +185,5 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
       'ORDER BY MOD_NOM;')
     Left = 632
     Top = 120
-  end
-  object dtsTipoLK: TDataSource
-    DataSet = qryTipoLK
-    Left = 552
-    Top = 120
-  end
-  object qryTipoLK: TFDQuery
-    Active = True
-    Connection = dtmEstacionamento.cnxEstacionamento
-    SQL.Strings = (
-      'SELECT TIP_COD,'
-      '       TIP_DES'
-      ' FROM TIPO'
-      'ORDER BY TIP_DES;')
-    Left = 704
-    Top = 168
   end
 end

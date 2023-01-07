@@ -51,9 +51,6 @@ __published:	// IDE-managed Components
     TDBLookupComboBox *dblkModelo;
     TDataSource *dtsModeloLK;
     TFDQuery *qryModeloLK;
-    TDBLookupComboBox *dblkTipo;
-    TDataSource *dtsTipoLK;
-    TFDQuery *qryTipoLK;
 private:	// User declarations
 public:		// User declarations
     __fastcall TFrmCadastroVeiculo(TComponent* Owner);
