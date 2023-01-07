@@ -23,17 +23,17 @@ class TFrmCadastroVeiculo : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
     TLabel *Label1;
-    TDBEdit *DBEditCodigo;
+    TDBEdit *DBEdit1;
     TLabel *Label2;
-    TDBEdit *DBEditMontadora;
+    TDBEdit *DBEdit2;
     TLabel *Label3;
-    TDBEdit *DBEditModelo;
+    TDBEdit *DBEdit3;
     TLabel *Label4;
-    TDBEdit *DBEditTipo;
+    TDBEdit *DBEdit4;
     TLabel *Label5;
-    TDBEdit *DBEditPlaca;
+    TDBEdit *DBEdit5;
     TLabel *Label6;
-    TDBEdit *DBEditFabricacao;
+    TDBEdit *DBEdit6;
 private:	// User declarations
 public:		// User declarations
     __fastcall TFrmCadastroVeiculo(TComponent* Owner);

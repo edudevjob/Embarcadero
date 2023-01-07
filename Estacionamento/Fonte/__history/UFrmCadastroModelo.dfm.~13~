@@ -30,7 +30,6 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
   end
   inherited tlbCadastroCRUD: TToolBar
     Top = 177
-    TabOrder = 4
     ExplicitTop = 177
     inherited btnSair: TToolButton
       OnClick = EvSairFormulario
@@ -43,7 +42,7 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
     Height = 27
     DataField = 'MOD_COD'
     DataSource = DataSourceMain
-    TabOrder = 0
+    TabOrder = 1
   end
   object DBEditMontadora: TDBEdit [5]
     Left = 105
@@ -53,7 +52,7 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
     CharCase = ecUpperCase
     DataField = 'MON_COD'
     DataSource = DataSourceMain
-    TabOrder = 1
+    TabOrder = 2
   end
   object DBEditNome: TDBEdit [6]
     Left = 106
@@ -72,16 +71,13 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
     Height = 27
     DataField = 'MON_COD'
     DataSource = DataSourceMain
-    KeyField = 'MON_COD'
-    ListField = 'MON_NOM'
-    ListSource = DataSMontadoraLK
-    TabOrder = 2
+    TabOrder = 4
   end
   inherited ImgAtiva: TImageList
-    Left = 632
+    Left = 608
   end
   inherited ImgHot: TImageList
-    Left = 520
+    Left = 488
     Top = 16
   end
   inherited DataSourceMain: TDataSource
@@ -95,7 +91,7 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
   object ImgInativa: TImageList
     Height = 48
     Width = 48
-    Left = 576
+    Left = 544
     Top = 16
     Bitmap = {
       494C010106000800040030003000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
@@ -2482,19 +2478,12 @@ inherited FrmCadastroModelo: TFrmCadastroModelo
       000000000000}
   end
   object DataSMontadoraLK: TDataSource
-    DataSet = qryMontadoraLK
     Left = 600
     Top = 96
   end
   object qryMontadoraLK: TFDQuery
-    Active = True
     Connection = dtmEstacionamento.cnxEstacionamento
-    SQL.Strings = (
-      'SELECT '
-      '      MON_COD,'
-      '      MON_NOM '
-      'FROM MONTADORA ')
-    Left = 456
+    Left = 424
     Top = 16
   end
 end

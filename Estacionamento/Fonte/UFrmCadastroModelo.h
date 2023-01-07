@@ -16,10 +16,33 @@
 #include <Vcl.ActnList.hpp>
 #include <Vcl.DBActns.hpp>
 #include <Vcl.ImgList.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.Mask.hpp>
+#include <FireDAC.Comp.Client.hpp>
+#include <FireDAC.Comp.DataSet.hpp>
+#include <FireDAC.DApt.hpp>
+#include <FireDAC.DApt.Intf.hpp>
+#include <FireDAC.DatS.hpp>
+#include <FireDAC.Phys.Intf.hpp>
+#include <FireDAC.Stan.Async.hpp>
+#include <FireDAC.Stan.Error.hpp>
+#include <FireDAC.Stan.Intf.hpp>
+#include <FireDAC.Stan.Option.hpp>
+#include <FireDAC.Stan.Param.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroModelo : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
+    TImageList *ImgInativa;
+    TLabel *Label1;
+    TDBEdit *DBEditCodigo;
+    TLabel *Label2;
+    TDBEdit *DBEditMontadora;
+    TLabel *Label3;
+    TDBEdit *DBEditNome;
+    TDBLookupComboBox *DblkCbxMontadora;
+    TDataSource *DataSMontadoraLK;
+    TFDQuery *qryMontadoraLK;
     void __fastcall EvSairFormulario(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

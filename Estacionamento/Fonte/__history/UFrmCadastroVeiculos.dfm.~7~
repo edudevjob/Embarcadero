@@ -17,7 +17,7 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     Top = 40
     Width = 75
     Height = 19
-    Caption = 'M&ontadora'
+    Caption = '&Montadora'
     FocusControl = DBEditMontadora
   end
   object Label3: TLabel [2]

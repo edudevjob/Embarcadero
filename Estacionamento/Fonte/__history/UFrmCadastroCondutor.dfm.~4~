@@ -41,7 +41,7 @@ inherited FrmCadastroCondutor: TFrmCadastroCondutor
   object dbEditCod: TDBEdit [5]
     Left = 70
     Top = 22
-    Width = 169
+    Width = 213
     Height = 27
     CharCase = ecUpperCase
     DataField = 'CON_COD'

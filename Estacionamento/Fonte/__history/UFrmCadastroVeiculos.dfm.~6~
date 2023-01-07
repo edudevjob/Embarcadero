@@ -17,7 +17,7 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     Top = 40
     Width = 75
     Height = 19
-    Caption = 'M&ontadora'
+    Caption = '&Montadora'
     FocusControl = DBEditMontadora
   end
   object Label3: TLabel [2]
@@ -111,20 +111,20 @@ inherited FrmCadastroVeiculo: TFrmCadastroVeiculo
     TabOrder = 6
   end
   inherited ImgAtiva: TImageList
-    Left = 696
+    Left = 720
     Top = 64
   end
   inherited ImgHot: TImageList
-    Left = 632
+    Left = 672
     Top = 64
   end
   inherited DataSourceMain: TDataSource
     DataSet = dtmEstacionamento.qryVeiculo
-    Left = 616
+    Left = 632
     Top = 8
   end
   inherited ActionListCRUD: TActionList
-    Left = 696
+    Left = 720
     Top = 8
   end
 end

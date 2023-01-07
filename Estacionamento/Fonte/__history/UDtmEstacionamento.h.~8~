@@ -47,13 +47,6 @@ __published:	// IDE-managed Components
     TIntegerField *qryModeloMOD_COD;
     TIntegerField *qryModeloMON_COD;
     TStringField *qryModeloMOD_NOM;
-    TFDQuery *qryVeiculo;
-    TIntegerField *qryVeiculoVEI_COD;
-    TIntegerField *qryVeiculoMON_COD;
-    TIntegerField *qryVeiculoMOD_COD;
-    TIntegerField *qryVeiculoTIP_COD;
-    TStringField *qryVeiculoVEI_PLA;
-    TIntegerField *qryVeiculoVEI_ANO_FAB;
 private:	// User declarations
 public:		// User declarations
     __fastcall TdtmEstacionamento(TComponent* Owner);
