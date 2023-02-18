@@ -29,6 +29,7 @@
 #include <FireDAC.Stan.Intf.hpp>
 #include <FireDAC.Stan.Option.hpp>
 #include <FireDAC.Stan.Param.hpp>
+#include <Vcl.Menus.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroModelo : public TFrmModeloCadastroCRUD
 {
@@ -43,7 +44,11 @@ __published:	// IDE-managed Components
     TDBLookupComboBox *DblkCbxMontadora;
     TDataSource *DataSMontadoraLK;
     TFDQuery *qryMontadoraLK;
+    TPopupMenu *ppmMontadora;
+    TMenuItem *AtualizeMontadora1;
     void __fastcall EvSairFormulario(TObject *Sender);
+    void __fastcall EvAtualizeDadosMontadora(TObject *Sender);
+
 private:	// User declarations
 public:		// User declarations
     __fastcall TFrmCadastroModelo(TComponent* Owner);

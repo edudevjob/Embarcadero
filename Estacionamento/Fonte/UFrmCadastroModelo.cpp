@@ -13,12 +13,21 @@
 TFrmCadastroModelo *FrmCadastroModelo;
 //---------------------------------------------------------------------------
 __fastcall TFrmCadastroModelo::TFrmCadastroModelo(TComponent* Owner)
-    : TFrmModeloCadastroCRUD(Owner)
+           : TFrmModeloCadastroCRUD(Owner)
 {
+   dtmEstacionamento->ConfigureLookUp(qryMontadoraLK);
 }
-//---------------------------------------------------------------------------
+
+void __fastcall TFrmCadastroModelo::EvAtualizeDadosMontadora(TObject *Sender)
+{
+  dtmEstacionamento->AtualizaLookUp(qryMontadoraLK);
+
+}
+
 void __fastcall TFrmCadastroModelo::EvSairFormulario(TObject *Sender)
 {
    Close();
 }
+
 //---------------------------------------------------------------------------
+

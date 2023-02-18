@@ -8,6 +8,7 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.Menus.hpp>
+#include <Vcl.WinXCalendars.hpp>
 //---------------------------------------------------------------------------
 class TfrmPrincipal : public TForm
 {
@@ -27,6 +28,7 @@ __published:	// IDE-managed Components
     TMenuItem *icket1;
     TMenuItem *Veculo2;
     TMenuItem *Permanncia1;
+    TCalendarPicker *CalendarPicker1;
     void __fastcall EvEncerrarSistema(TObject *Sender);
     void __fastcall EvCadastroCondutorClick(TObject *Sender);
     void __fastcall EvCadastroMontadora(TObject *Sender);
